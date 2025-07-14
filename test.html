@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Hi");
+        alert("Hi");
+
+        const a = 1;
+        console.log(a);
+
+        const c = "3";
+        console.log(c);
+        if (c == 3) {
+            console.log("true"); // 문자형과 숫자형이기 때문에 값이 나오지 않음
+        }
+        
+        let d = 4;
+        while(d < 7){
+            console.log("d="+ d);
+            d++ //해주지 않으면 무한루프
+        }
+
+        for(let e=5; e<=8; e++){
+            console.log("e의 값은 : " + e);
+        }
+
+        let b = 2;
+        b= 3;
+        console.log(b);  
+
+        function runExample () {
+            
+            const cart = {
+                user: "ALEX",
+                items: [
+                    {id: 1, name: "노트북", price: 100},
+                    {id: 2, name: "선풍기", price: 200}
+                ]
+            };
+
+            const order = {...cart};
+            order.items[0].price = 200;
+
+            const fruits = ["사과", "바나나", "복숭아"];
+            fruits.sort();
+
+            console.log(fruits.sort());
+
+        //  console.log("카트 아이템은", cart.items);
+        //  console.log("장바구니 아이템은", order.items);
+        };
+
+        runExample();
+    </script>
+</head>
+<body>
+    안녕하세요.
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block 속성</title>
+    <style> * {margin: 0; padding: 0;}
+           li {list-style: none;}
+           .con1 .in li {display: inline-block; width:120px; height:50px; border: 1px solid gray; margin:10px 20px 0 30px;}
+           body {background-color: white;}
+           .wrap {width: 70%; height:500px; margin:100px auto;}
+           h1 {text-align: center; background-color: yellow; margin-bottom: 30px;}
+           .con1{background-color: green; margin-top:50px; height: 200px; padding: 50px;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>block 요소</h1>
+        <div class="con1">
+            <h2>01.block 세부 요소</h2>
+            <ul>
+                <li>div</li>
+                <li>p</li>
+                <li>h1 ~ h6</li>
+                <li>ul, ol, li</li>
+                <li>form</li>
+            </ul>
+        </div>
+        <div class="con1">
+            <h2>02.시멘틱 태그</h2>
+            <ul class="in">
+                <li>table</li>
+                <li>header</li>
+                <li>nav</li>
+                <li>aside</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
